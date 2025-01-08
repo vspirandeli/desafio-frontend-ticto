@@ -1,0 +1,52 @@
+@use '../../../../styles/colors.scss' as *;
+
+.section {
+  width: 388px;
+  height: 175px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: white;
+
+  padding: 22px 32px 27px 35px;
+  
+  border-radius: 8px;
+
+  dd {
+    font-size: 2.5rem;
+
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 791px) {
+    width: 100%;
+  }
+
+  @media (max-width: 425px) {
+    height: 120px;
+
+    padding: 12px 15px;
+  }
+}
+
+.total {
+  color: white;
+  background-color: $green-color;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  dt {
+    font-size: 1.5rem;
+  }
+
+  img {
+    max-width: 19px;
+    max-height: 19px;
+  }
+}

@@ -1,0 +1,101 @@
+@use '../../../styles/colors.scss' as *;
+
+.tableContainer {
+  max-width: 1280px;
+  
+  margin-inline: auto;
+  padding-inline: 42px;
+
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+  }
+}
+
+.table {
+  width: 100%;
+
+  margin-top: 43px;
+
+  border-spacing: 0 20px;
+
+  overflow: hidden;
+
+  td:first-child,
+  th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+ 
+  td:last-child,
+  th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  th {
+    text-align: left;
+    font-size: 1.125rem;
+    
+    color: $text-secondary-color;
+  }
+
+  tbody > tr {
+    background-color: white;
+  }
+
+  tbody > tr > td {
+    &:first-child {
+      padding: 1.25rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 23px;
+
+    border-spacing: 0 14px;
+  }
+}
+
+.descriptionColumn {
+  width: 34%;  
+}
+
+.valueColumn {
+  width: 20%;
+}
+
+.categoryColumn {
+  width: 25%;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.actionColumn {
+  width: 5%;
+}
+
+.actionIcon {
+  cursor: pointer;
+
+  padding: 7px;
+}
+
+.dateColumn {
+  width: 18%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.inbound {
+  color: $green-color;
+
+  font-weight: 600;
+}
+
+.outbound {
+  color: $red-color;
+
+  font-weight: 600;
+}

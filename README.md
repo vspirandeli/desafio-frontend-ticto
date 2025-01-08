@@ -4,10 +4,16 @@
   </a>
 </p>
 
+
+
 # Desafio Frontend Ticto
 
+### Resumo
+
+Este documento descreve o desafio de frontend para a empresa Ticto, detalhando os requisitos, tecnologias utilizadas e instruções para execução do projeto.
+
 Para a realização do desafio foi utilizado a menor quantidade de bibliotecas possíveis. O que pode resultar em um código mais extenso, mas que atende as necessidades do desafio.
-Foi usando 'use client' para gerenciar o estado da aplicação. E use-state para os estados da aplicação.
+Foi usando 'use client' na página para simplificar o desenvolvimento, tendo em vista que não havia limitação no escopo do desafio. Foi usado, também, o hook _useState_ para os estados da aplicação.
 
 ## Sobre o projeto
 
